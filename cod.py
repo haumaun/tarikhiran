@@ -43,3 +43,20 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Example()
     sys.exit(app.exec_())
+
+
+
+class CenteredImageWindow(QWidget):
+    def init(self):
+        super().init()
+
+        self.setWindowTitle
+        self.setGeometry(100, 100, 500, 400)
+
+        # لود عکس
+        pixmap = QPixmap("./assets/map/map-1.png")  # اسم عکس و مسیرش
+
+        # ساخت لیبل و تنظیم عکس
+        label = QLabel()
+        label.setPixmap(pixmap)
+        label.setScaledContents(True)
