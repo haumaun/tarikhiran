@@ -16,7 +16,7 @@ class Example(QWidget):
         self.label = QLabel(self)
 
         # بارگذاری عکس از فایل
-        pixmap = QPixmap('.....')  
+        pixmap = QPixmap('./assets/bg.png')  
 
         # تنظیم عکس در QLabel
         self.label.setPixmap(pixmap)
